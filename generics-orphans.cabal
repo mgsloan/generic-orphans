@@ -1,0 +1,27 @@
+name:               generic-orphans
+version:            0.1
+cabal-version:      >= 1.6
+build-type:         Simple
+license:            BSD3
+license-file:       LICENSE
+category:           Generics
+author:             Michael Sloan
+copyright:          (c) Michael Sloan
+maintainer:         Michael Sloan <mgsloan at gmail>
+bug-reports:        https://github.com/mgsloan/generic-orphans/issues
+stability:          experimental
+tested-with:        GHC == 7.6.1
+synopsis:           Orphan instances for GHC generics 
+
+library
+  build-depends:   base >= 4.2 && < 4.7,
+                   template-haskell >= 2.4 && < 2.9,
+                   th-lift
+
+  hs-source-dirs:  src
+  exposed-modules: GHC.Generics.Instances
+
+source-repository head
+  type:     git
+  location: git://github.com/mgsloan/generic-orphans.git
+
