@@ -10,11 +10,12 @@ copyright:          (c) Michael Sloan
 maintainer:         Michael Sloan <mgsloan at gmail>
 bug-reports:        https://github.com/mgsloan/generic-orphans/issues
 stability:          experimental
-tested-with:        GHC == 7.6.1
+tested-with:        GHC == 7.4.2
 synopsis:           Orphan instances for GHC generics 
 
 library
   build-depends:   base >= 4.2 && < 4.7,
+                   ghc-prim,
                    template-haskell >= 2.4 && < 2.9,
                    th-lift
 
