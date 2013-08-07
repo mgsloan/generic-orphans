@@ -74,3 +74,8 @@ deriving instance Generic RuleBndr
 deriving instance Generic RuleMatch
 deriving instance Generic TyLit
 #endif
+
+#if MIN_VERSION_template_haskell(2,9,0)
+deriving instance Generic Role
+deriving instance Generic TySynEqn
+#endif
